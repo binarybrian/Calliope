@@ -23,18 +23,36 @@ Calliope is a local-first story-to-video studio. You type a story idea; Calliope
 - An OpenAI-compatible LLM endpoint — local (LM Studio, Ollama, etc.) or hosted
 - ffmpeg on PATH — needed for film export
 
-**1. Backend (FastAPI)**
+**Quick start (both platforms)**
+
+Run the setup and start scripts at the repo root — they handle both backend and frontend:
+
+- **Windows:** `setup.bat` then `start.bat` (two windows) or `start-bg.bat` (background)
+- **Linux/macOS:** `./setup.sh` then `./start.sh` (two windows) or `./start-bg.sh` (background)
+- **Stop:** `stop.bat` (Windows) or `./stop.sh` (Linux/macOS)
+
+**Manual — 1. Backend (FastAPI)**
 
 ```bash
 cd calliope-backend
 python -m venv .venv
+```
+
+Windows:
+```bash
 .venv\Scripts\pip install -e ".[dev]"
 .venv\Scripts\python -m calliope.main --host 127.0.0.1 --port 8247
 ```
 
+Linux/macOS:
+```bash
+.venv/bin/pip install -e ".[dev]"
+.venv/bin/python -m calliope.main --host 127.0.0.1 --port 8247
+```
+
 Optionally copy `calliope_config.example.json` to `calliope_config.json` and edit it before starting (LLM endpoint, ComfyUI URL). You can also configure everything later in the app's **Settings** page. Never commit `calliope_config.json` — it stores your API key.
 
-**2. Frontend (SvelteKit)**
+**Manual — 2. Frontend (SvelteKit)**
 
 ```bash
 cd calliope-web
