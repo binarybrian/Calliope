@@ -15,7 +15,7 @@
   },
   "119": {
     "inputs": {
-      "vae_name": "minimax-h3\\minimax_h3_video_vae_fp16.safetensors"
+      "vae_name": "minimax-h3/minimax_h3_video_vae_fp16.safetensors"
     },
     "class_type": "VAELoader",
     "_meta": {
@@ -24,7 +24,7 @@
   },
   "120": {
     "inputs": {
-      "vae_name": "minimax-h3\\minimax_h3_audio_vae_fp32.safetensors"
+      "vae_name": "minimax-h3/minimax_h3_audio_vae_fp32.safetensors"
     },
     "class_type": "VAELoader",
     "_meta": {
@@ -117,7 +117,7 @@
   },
   "127": {
     "inputs": {
-      "unet_name": "minimax-h3\\minimax_h3_ref2va_int8_convrot.safetensors",
+      "unet_name": "minimax-h3/minimax_h3_ref2va_int8_convrot.safetensors",
       "weight_dtype": "default"
     },
     "class_type": "UNETLoader",
@@ -127,7 +127,7 @@
   },
   "128": {
     "inputs": {
-      "clip_name": "minimax-h3\\qwen3vl_32b_h3_ultra_uncensored_heretic_int8_convrot.safetensors",
+      "clip_name": "minimax-h3/qwen3vl_32b_h3_ultra_uncensored_heretic_int8_convrot.safetensors",
       "type": "minimax",
       "device": "default"
     },
@@ -201,7 +201,7 @@
   },
   "5959": {
     "inputs": {
-      "lora_name": "minimax-h3\\minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "lora_name": "minimax-h3/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
       "strength_model": 1,
       "model": [
         "127",
@@ -298,7 +298,7 @@
   },
   "6126": {
     "inputs": {
-      "lora_name": "minimax-h3\\h3-realism-people-t2v-i2v-r2v(r34l1sm).safetensors",
+      "lora_name": "minimax-h3/h3-realism-people-t2v-i2v-r2v(r34l1sm).safetensors",
       "strength_model": 1,
       "model": [
         "5959",
